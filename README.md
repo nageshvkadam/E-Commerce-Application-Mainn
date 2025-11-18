@@ -1,79 +1,130 @@
-Expense Tracker Application
+E-Commerce Application
 
-A secure, user-friendly, and full-stack Expense Tracker Application built using Spring Boot, Spring Security, React.js, and MySQL. This project helps users manage their daily expenses with features like authentication, CRUD operations, and category-wise visual insights.
+A full-stack, scalable, and high-performance E-Commerce Application developed using Spring Boot, React.js, and MySQL. This project includes complete backend architecture, REST APIs, frontend UI, routing, and cart/order workflows.
+---
 
 🚀 Features
 
-🔐 Authentication & Security
+🖥 Backend (Spring Boot)
 
-Implemented Spring Security (Basic Authentication) for secure login.
+Developed and maintained a high-performance and resilient backend using Spring Boot.
 
-Access control to ensure only authorized users can manage their expenses.
+Followed MVC architecture (Controller → Service → Repository) for clean and modular development.
+
+Implemented core e-commerce features:
+
+User Management
+
+Product Management
+
+Cart Functionality
+
+Order Processing
 
 
-🗂 Expense Management (CRUD)
+Designed and validated RESTful APIs using Postman for:
 
-Add, View, Edit, and Delete expenses.
+HTTP status codes
 
-Each expense includes category, amount, comments, and timestamps.
+Payload structure
 
-Built using Spring M VC architecture (Controller → Service → Repository).
+Error handling and exceptions
 
+🔐 Security
 
-🌐 RESTful API Development
-
-Designed and tested all APIs using Postman.
-
-Proper request/response validation, HTTP status codes, and exception handling.
-
+Integrated Spring Security (Basic Authentication) to secure endpoints.
 
 💻 Frontend (React.js)
 
-Developed responsive and interactive UI using React.
+Developed a dynamic and responsive UI for smooth user experience.
 
-Users can easily add, edit, or delete expenses.
+Used React Router for client-side routing across major pages:
 
-Integrated Pie Chart visualization for category-wise expense distribution.
+Home
+
+Products
+
+Cart
+
+Checkout
+
+User Dashboard
 
 
-🧪 Unit Testing
+Used React Hooks (useState, useEffect, useContext) for:
 
-Tested service layer logic using JUnit to ensure correctness and maintainability.
+State management
+
+Data fetching
+
+Handling interactive UI events
+
+
+
+🧪 Testing
+
+Tested backend logic using JUnit to ensure proper functionality and maintainability.
+
+Validated APIs thoroughly using Postman.
+
+
+
+---
 
 🛠 Tech Stack
 
 Backend: Spring Boot, Spring Security (Basic Auth), Spring Data JPA
-Frontend: React.js
+Frontend: React.js, React Router, React Hooks
 Database: MySQL
 Testing: Postman, JUnit
 Architecture: MVC Pattern
 
+
+---
+
 📌 Project Architecture
 
 Controller → Service → Repository → Database (MySQL)
+React Frontend → REST APIs → Spring Boot Backend
 
-Clear separation of concerns for clean, modular, and testable code.
 
-
-📷 Screenshots (Add your images)
-
-Dashboard
-
-Add Expense Page
-
-Pie Chart Visualization
 ---
 
 📬 API Endpoints (Sample)
 
-Expense APIs
+User APIs
 
 Method	Endpoint	Description
 
-GET	/api/expenses	Get all expenses
-POST	/api/expenses	Add new expense
-PUT	/api/expenses/{id}	Update existing expense
-DELETE	/api/expenses/{id}	Delete expense
+POST	/api/users/register	User registration
+POST	/api/users/login	User login
+
+
+Product APIs
+
+Method	Endpoint	Description
+
+GET	/api/products	Get all products
+GET	/api/products/{id}	Get product by ID
+
+
+Cart APIs
+
+Method	Endpoint	Description
+
+POST	/api/cart/add	Add product to cart
+GET	/api/cart	View cart items
+
+
+Order APIs
+
+Method	Endpoint	Description
+
+POST	/api/order	Place order
+GET	/api/order/{id}	Get order details
+
+
+
 ---
 
 ⚙ How to Run
@@ -81,13 +132,41 @@ DELETE	/api/expenses/{id}	Delete expense
 Backend
 
 1. Clone the repository
-2. Configure application.properties (MySQL credentials)
+2. Update application.properties with MySQL credentials
 3. Run the Spring Boot application
 
 Frontend
 
-1. Navigate to React project folder
+1. Navigate to the React app folder
 2. Run: npm install
-3. Start server: npm start
+3. Start development server: npm start
 
--------------------------------------
+
+---
+
+📷 Screenshots (Add your images)
+
+Home Page
+
+Product Listing Page
+
+Cart Page
+
+Checkout Page
+
+Order Summary
+
+
+
+---
+
+🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+
+---
+
+⭐ Show Your Support
+
+If this project helped you, please consider giving it a star on GitHub!
